@@ -1,44 +1,21 @@
-# Kali Linux Network Security Lab
+## Lab Evidence
 
-## Overview
+### Kali Network Configuration
 
-This home lab was created to practice foundational network security, Linux networking, and troubleshooting skills in an isolated virtual environment.
+The Kali Linux analysis machine was configured with a dedicated lab interface (`eth1`) using the private IPv4 address `10.10.10.10/24`.
 
-The lab focused on configuring and verifying network interfaces within Kali Linux and preparing the environment for network traffic monitoring with Wireshark.
+![Kali Network Interface](kali-network-interface.png)
 
-## Lab Environment
+### Security Testing Environment
 
-- Kali Linux
-- Oracle VirtualBox
-- Wireshark
-- Isolated virtual network
-- IPv4 networking
+Metasploit Framework was launched within Kali Linux as part of the isolated security-testing environment.
 
-## Objectives
+![Metasploit Framework](metasploit-framework.png)
 
-- Configure a Kali Linux virtual machine for network security analysis
-- Identify available Linux network interfaces
-- Verify interface status and IPv4 addressing
-- Prepare a network interface for packet capture
-- Troubleshoot network-interface visibility between Linux and Wireshark
+### Metasploitable Target Configuration
 
-## Network Configuration
+The Metasploitable target system was configured on the same isolated `10.10.10.0/24` network using the address `10.10.10.20`.
 
-During the lab, the Kali Linux system contained multiple network interfaces.
+![Metasploitable Network Configuration](metasploitable-network-config.png)
 
-The isolated lab interface was configured with:
-
-- **Interface:** eth1
-- **IPv4 Address:** 10.10.10.10/24
-- **Network:** 10.10.10.0/24
-
-The interface was verified as active from the Linux command line.
-
-## Tools and Commands
-
-Linux networking utilities were used to inspect and troubleshoot the environment.
-
-Example:
-
-```bash
-ip addr
+> All security testing shown in this project was performed within an isolated, personally controlled virtual lab environment.
